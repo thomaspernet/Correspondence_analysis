@@ -190,7 +190,7 @@ def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 			}
 
 	fig, ax = plt.subplots(figsize=(8, 8))
-	an = np.linspace(0, 2 * np.pi, 100)
+	an = np.linspace(0, 2 * np.pi, 1000)
 
 	ax.scatter(row_norm['x_shrink'],
 	   row_norm['y_shrink'])
@@ -216,7 +216,7 @@ def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 	plt.ylabel('Dimension 2 (%.2f%%)' % (variance_explained[1]*100))
 	plt.show()
 	dic_data = {
-		'x_cirle': np.cos(an),
+		'x_circle': np.cos(an),
 		'y_circle': np.sin(an),
 		'row_norm':row_norm,
 		'col_norm':col_norm

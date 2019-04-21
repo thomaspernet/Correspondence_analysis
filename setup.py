@@ -6,20 +6,18 @@ with open("README.md", "r") as fh:
 #required_package = ['numpy', 'pandas', 'seaborn', 'matplotlib',
 #'scipy', 'plotly', 'researchpy', 'statsmodels', 'squarify']
 
-required_package = ['pandas', 'oauth2client', 'httplib2',
- 'google-api-python-client', 'google-api-core', 'google-cloud-storage',
- 'google-cloud-bigquery']
+required_package = ['pandas', 'numpy', 'matplotlib']
 
 setuptools.setup(
-     name='GoogleDrivePy',
-     version='1.0',
+     name='Correspondence_analysis',
+     version='0.1',
      #scripts=['data_analysis_econometrics'] ,
      author="Thomas Pernet",
      author_email="t.pernetcoudrier@gmail.com",
-     description="A simple package to connect to the drive from Colab",
+     description="A simple package to compute Correspondence analysis,
      long_description=long_description,
      long_description_content_type="text/markdown",
-     url="https://github.com/thomaspernet/GoogleDrive-python",
+     url="https://github.com/thomaspernet/Correspondence_analysis",
      packages=setuptools.find_packages(),
      install_requires= required_package,
      classifiers=[

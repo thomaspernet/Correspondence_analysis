@@ -64,11 +64,11 @@ class compute_ca:
 		##### To DF
 		df_coordinate_r = pd.DataFrame(principal_coordinate_rows[:, :-1],
 							columns = ['dim_1', 'dim_2'],
-							index = df.index)
+							index = self.df.index)
 
 		df_coordinate_c = pd.DataFrame(std_columns_coordinate[:, :-1],
 							columns = ['dim_1', 'dim_2'],
-							index = list(df))
+							index = list(self.df))
 
 		dic_results = {
 			'pc_rows': df_coordinate_r,

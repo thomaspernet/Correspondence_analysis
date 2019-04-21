@@ -62,7 +62,7 @@ class compute_ca:
 		principal_coordinate_columns = std_columns_coordinate * d
 
 		##### To DF
-		df_coordinate_r = pd.DataFrame(principal_coordinate_rows[:, :-1],
+		df_coordinate_r = pd.DataFrame(principal_coordinate_rows[:, :2],
 							columns = ['dim_1', 'dim_2'],
 							index = self.df.index)
 

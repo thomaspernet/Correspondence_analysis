@@ -70,7 +70,7 @@ class compute_ca:
 							columns = ['dim_1', 'dim_2'],
 							index = list(self.df))
 		df_observed_proportion = pd.DataFrame(P,
-							columns  = list(self.df)
+							columns  = list(self.df),
 							index = list(self.df))
 
 		dic_results = {

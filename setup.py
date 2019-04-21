@@ -14,7 +14,7 @@ setuptools.setup(
      #scripts=['data_analysis_econometrics'] ,
      author="Thomas Pernet",
      author_email="t.pernetcoudrier@gmail.com",
-     description="A simple package to compute Correspondence analysis,
+     description="A simple package to compute Correspondence analysis",
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/thomaspernet/Correspondence_analysis",

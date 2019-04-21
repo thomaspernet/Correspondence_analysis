@@ -21,7 +21,7 @@ class compute_ca:
 		"""
 
 		### Step 1: Compute observed proportion
-		P = np.array(self.df / df.values.sum())
+		P = np.array(self.df / self.df.values.sum())
 
 		### Step 2: computes masses
 		column_masses = P.sum(axis=0)

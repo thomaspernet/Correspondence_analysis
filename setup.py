@@ -9,8 +9,8 @@ with open("README.md", "r") as fh:
 required_package = ['pandas', 'numpy', 'matplotlib']
 
 setuptools.setup(
-     name='Correspondence_analysis',
-     version='0.1',
+     name='CorrespondenceAnalysisPy',
+     version='0.2',
      #scripts=['data_analysis_econometrics'] ,
      author="Thomas Pernet",
      author_email="t.pernetcoudrier@gmail.com",

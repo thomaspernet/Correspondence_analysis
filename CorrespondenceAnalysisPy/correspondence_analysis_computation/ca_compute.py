@@ -69,9 +69,10 @@ class compute_ca:
 		df_coordinate_c = pd.DataFrame(std_columns_coordinate[:, :2],
 							columns = ['dim_1', 'dim_2'],
 							index = list(self.df))
-		df_observed_proportion = pd.DataFrame(P,
+		df_observed_proportion = pd.DataFrame(
+							P,
 							columns  = list(self.df),
-							index = list(self.df))
+							index = self.df.index)
 
 		dic_results = {
 			'observed_proportion': df_observed_proportion,

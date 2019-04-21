@@ -220,6 +220,7 @@ def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 		'y_circle': np.sin(an),
 		'row_norm':row_norm,
 		'col_norm':col_norm,
+		'figure' : fig
 	}
 	if export_data == True:
 		return dic_data

@@ -151,8 +151,8 @@ def row_principal_coordinates(df_x, df_y, variance_explained):
 
 	for x, name in dic_df.items():
 		for i, label in enumerate(name[0]):
-			ax.text(name[1][i]+0.12,
-				name[2][i]+0.12,
+			ax.text(name[1][i]+0.1,
+				name[2][i]+0.1,
 				label,
 				color='black',
 				ha='center',
@@ -200,8 +200,8 @@ def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 
 	for i, name in dic_df_rescale.items():
 		for i, label in enumerate(name[0]):
-			ax.text(name[1][i]+0.12,
-		 name[2][i]+0.12,
+			ax.text(name[1][i]+0.1,
+		 name[2][i]+0.1,
 		 label,
 		 color='black',
 		 ha='center',

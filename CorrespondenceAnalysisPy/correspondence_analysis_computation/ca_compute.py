@@ -6,7 +6,7 @@ class compute_ca:
 	def __init__(self, df):
 		self.df = df
 
-	def correspondance_analysis(df):
+	def correspondance_analysis(self):
 		"""
 		Compute dimensions 1 and 2 for
 		- rows
@@ -21,7 +21,7 @@ class compute_ca:
 		"""
 
 		### Step 1: Compute observed proportion
-		P = np.array(df / df.values.sum())
+		P = np.array(self.df / df.values.sum())
 
 		### Step 2: computes masses
 		column_masses = P.sum(axis=0)

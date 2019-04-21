@@ -170,7 +170,7 @@ def row_principal_coordinates(df_x, df_y, variance_explained):
 	plt.ylabel('Dimension 2 (%.2f%%)' % (variance_explained[1]*100))
 	plt.show()
 
-def row_focus_coordinates(df_x, df_y, variance_explained):
+def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 	"""
 	plot the columns on the circle and rescale
 	the rows
@@ -221,4 +221,5 @@ def row_focus_coordinates(df_x, df_y, variance_explained):
 		'row_norm':row_norm,
 		'col_norm':col_norm
 	}
-	return dic_data
+	if export_data == True:
+		return dic_data

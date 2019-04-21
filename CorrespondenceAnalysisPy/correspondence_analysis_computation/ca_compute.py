@@ -215,3 +215,10 @@ def row_focus_coordinates(df_x, df_y, variance_explained):
 	plt.xlabel('Dimension 1 (%.2f%%)' % (variance_explained[0]*100))
 	plt.ylabel('Dimension 2 (%.2f%%)' % (variance_explained[1]*100))
 	plt.show()
+	dic_data = {
+		'x_cirle': np.cos(an),
+		'y_circle': np.sin(an),
+		'row_norm':row_norm,
+		'col_norm':col_norm
+	}
+	return dic_data

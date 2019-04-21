@@ -69,8 +69,12 @@ class compute_ca:
 		df_coordinate_c = pd.DataFrame(std_columns_coordinate[:, :2],
 							columns = ['dim_1', 'dim_2'],
 							index = list(self.df))
+		df_observed_proportion = pd.DataFrame(P,
+							columns  = list(self.df)
+							index = list(self.df))
 
 		dic_results = {
+			'observed_proportion': df_observed_proportion,
 			'pc_rows': df_coordinate_r,
 			'pc_columns': df_coordinate_c,
 			'variance_explained': variance_explained,

@@ -169,6 +169,7 @@ def row_principal_coordinates(df_x, df_y, variance_explained):
 	plt.xlabel('Dimension 1 (%.2f%%)' % (variance_explained[0]*100))
 	plt.ylabel('Dimension 2 (%.2f%%)' % (variance_explained[1]*100))
 	plt.show()
+	return fig
 
 def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 	"""

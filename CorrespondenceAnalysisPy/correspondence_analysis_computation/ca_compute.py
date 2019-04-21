@@ -66,7 +66,7 @@ class compute_ca:
 							columns = ['dim_1', 'dim_2'],
 							index = self.df.index)
 
-		df_coordinate_c = pd.DataFrame(std_columns_coordinate[:, :-1],
+		df_coordinate_c = pd.DataFrame(std_columns_coordinate[:, :2],
 							columns = ['dim_1', 'dim_2'],
 							index = list(self.df))
 

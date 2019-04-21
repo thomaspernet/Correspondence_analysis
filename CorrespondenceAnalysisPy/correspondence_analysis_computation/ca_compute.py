@@ -77,4 +77,4 @@ class compute_ca:
 			'eigenvalues': eigenvalues
 			}
 
-	return dic_results
+		return dic_results

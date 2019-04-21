@@ -168,7 +168,7 @@ def row_principal_coordinates(df_x, df_y, variance_explained):
 	# Add the axis labels
 	plt.xlabel('Dimension 1 (%.2f%%)' % (variance_explained[0]*100))
 	plt.ylabel('Dimension 2 (%.2f%%)' % (variance_explained[1]*100))
-	plt.show()
+	#plt.show()
 	return fig
 
 def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
@@ -215,7 +215,7 @@ def row_focus_coordinates(df_x, df_y, variance_explained, export_data = False):
 	# Add the axis labels
 	plt.xlabel('Dimension 1 (%.2f%%)' % (variance_explained[0]*100))
 	plt.ylabel('Dimension 2 (%.2f%%)' % (variance_explained[1]*100))
-	plt.show()
+	#plt.show()
 	dic_data = {
 		'x_circle': np.cos(an),
 		'y_circle': np.sin(an),
